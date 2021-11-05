@@ -3,8 +3,13 @@
     <ul class="flex">
       <li v-for="element in liens" v-bind:key="element.id" class="flex flex1">
         <div class="buttonMenu">
-          <a :href="element.link">
-            {{element.text}}
+          <a class="link w-100" :href="element.link">
+            <span class="flex1">
+              {{element.text}}
+            </span>
+            <span class="flex1">
+              <i class="fa-solid fa-question"></i>
+            </span>
           </a>
         </div>
       </li>
@@ -55,10 +60,24 @@ export default {
     flex: 1;
   }
   .buttonMenu{
-    height: 200px;
+    height: 150px;
     width: 350px;
-    background-color: darkred;
+    background-color: #e3001a;
     color: white;
     border-bottom: 10px solid grey;
+    transition-duration: 0.25s;
+    display: flex;
+  }
+  .buttonMenu:hover{
+    transform: scale(1.25);
+  }
+  .link{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  .w-100{
+    width: 100%;
   }
 </style>

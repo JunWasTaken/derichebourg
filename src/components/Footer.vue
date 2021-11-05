@@ -25,7 +25,7 @@ export default {
     position: absolute;
     bottom: 0px;
     border-top: solid 1px darkgrey;
-    border-bottom: 10px solid darkred;
+    border-bottom: 10px solid #e3001a;
     width: 100%;
     box-sizing: border-box;
   }
@@ -48,7 +48,7 @@ export default {
     transition: 0.5s;
   }
   .link:hover{
-    background-color: rgba(139, 0, 0, 0.75);
+    background-color: rgba(227, 0, 26, 0.75);
   }
   .link:visited{
     text-decoration: underline;

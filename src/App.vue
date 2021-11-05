@@ -27,7 +27,7 @@ export default {
   margin-top: 60px;
 }
 #logoDerichebourg {
-  height: 250px;
+  height: 150px;
   width: auto;
   margin-bottom: 25px;
 }
