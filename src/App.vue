@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/bison-rouge.png" alt="bison rouge" id="logoDerichebourg">
     <IndexMenu/>
     <Footer/>
   </div>
@@ -25,5 +25,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#logoDerichebourg {
+  height: 250px;
+  width: auto;
+  margin-bottom: 25px;
 }
 </style>
