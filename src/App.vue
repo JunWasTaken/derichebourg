@@ -9,7 +9,7 @@
 
 <script>
 import Footer from './components/Footer'
-import IndexMenu from './components/MainMenu/IndexMenu'
+import IndexMenu from './components/Menus/IndexMenu'
 
 export default {
   name: 'App',

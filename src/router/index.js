@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all'
-import HelloWorld from '@/components/HelloWorld'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import App from '../App'
+
+library.add(fas)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Router)
 
@@ -10,8 +15,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'App',
+      component: App
     }
   ]
 })

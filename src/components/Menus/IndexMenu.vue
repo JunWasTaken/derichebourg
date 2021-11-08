@@ -1,14 +1,14 @@
 <template>
   <div id="menu">
     <ul class="flex">
-      <li v-for="element in liens" v-bind:key="element.id" class="flex flex1">
+      <li v-for="element in liens" v-bind:key="element.id" :id="element.id" class="flex flex1">
         <div class="buttonMenu">
           <a class="link w-100" :href="element.link">
             <span class="flex1">
               {{element.text}}
             </span>
             <span class="flex1">
-              <i class="fa-solid fa-question"></i>
+              <font-awesome-icon v-bind:icon="element.icon" size="2x" />
             </span>
           </a>
         </div>
@@ -26,17 +26,20 @@ export default {
         {
           id: 'platforms',
           link: '#',
-          text: 'plateformes utilisées'
+          text: 'plateformes utilisées',
+          icon: 'folder'
         },
         {
           id: 'FAQ',
           link: '#',
-          text: 'FAQ'
+          text: 'FAQ',
+          icon: 'book'
         },
         {
           id: 'incidents',
           link: '#',
-          text: 'Incidents'
+          text: 'Incidents',
+          icon: 'laptop-medical'
         }
       ]
     }
@@ -60,7 +63,7 @@ export default {
     flex: 1;
   }
   .buttonMenu{
-    height: 150px;
+    height: 100px;
     width: 350px;
     background-color: #e3001a;
     color: white;
@@ -76,6 +79,8 @@ export default {
     color: white;
     font-weight: bolder;
     font-size: x-large;
+    display: flex;
+    align-items: center;
   }
   .w-100{
     width: 100%;
