@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from '../App'
+import FAQ from '../FAQ'
 
 library.add(fas)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'App',
       component: App
+    },
+    {
+      path: '/FAQ',
+      name: 'FAQ',
+      component: FAQ
     }
   ]
 })

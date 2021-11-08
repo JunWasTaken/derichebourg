@@ -3,14 +3,14 @@
     <ul class="flex">
       <li v-for="element in liens" v-bind:key="element.id" :id="element.id" class="flex flex1">
         <div class="buttonMenu">
-          <a class="link w-100" :href="element.link">
+          <router-link class="link w-100" v-bind:to="element.link">
             <span class="flex1">
               {{element.text}}
             </span>
             <span class="flex1">
               <font-awesome-icon v-bind:icon="element.icon" size="2x" />
             </span>
-          </a>
+          </router-link>
         </div>
       </li>
     </ul>
@@ -31,7 +31,7 @@ export default {
         },
         {
           id: 'FAQ',
-          link: '#',
+          link: '/FAQ',
           text: 'FAQ',
           icon: 'book'
         },
