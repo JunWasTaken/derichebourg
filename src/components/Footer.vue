@@ -45,10 +45,13 @@ export default {
     box-sizing: border-box;
     padding: 10px;
     margin: 10px;
-    transition: 0.5s;
+    transition-duration: 0.5s;
   }
   .link:hover{
-    background-color: rgba(227, 0, 26, 0.75);
+    transform: scale(1.25);
+    background-color: rgba(227, 0, 26, 0.95);
+    color: #fff;
+    font-weight: bold;
   }
   .link:visited{
     text-decoration: underline;

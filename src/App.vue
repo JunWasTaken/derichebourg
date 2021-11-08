@@ -1,8 +1,6 @@
 <template>
   <div id="app">
     <img src="./assets/bison-rouge.png" alt="bison rouge" id="logoDerichebourg">
-    <Header/>
-    <IndexMenu/>
     <router-view/>
     <Footer/>
   </div>
@@ -31,6 +29,5 @@ export default {
 #logoDerichebourg {
   height: 150px;
   width: auto;
-  margin-bottom: 25px;
 }
 </style>

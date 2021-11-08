@@ -25,7 +25,7 @@ export default {
       liens: [
         {
           id: 'platforms',
-          link: '#',
+          link: '/platforms',
           text: 'plateformes utilisées',
           icon: 'folder'
         },
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 'incidents',
-          link: '#',
+          link: '/incidents',
           text: 'Incidents',
           icon: 'laptop-medical'
         }
