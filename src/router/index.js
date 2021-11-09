@@ -7,6 +7,7 @@ import FAQ from '../views/FAQ'
 import IndexMenu from '../components/Menus/IndexMenu'
 import Platforms from '../views/Platforms'
 import Incidents from '../views/Incidents'
+import Clients from '../components/Clients'
 
 library.add(fas)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/incidents',
       name: 'incidents',
       component: Incidents
+    },
+    {
+      path: '/clients/:id',
+      name: 'clients',
+      component: Clients
     }
   ]
 })

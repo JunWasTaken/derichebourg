@@ -1,7 +1,7 @@
 <template>
   <div id="menu">
-    <ul class="flex">
-      <li v-for="element in liens" v-bind:key="element.id" :id="element.id" class="flex flex1">
+    <ul class="block">
+      <li v-for="element in liens" v-bind:key="element.id" :id="element.id" class="flex flex1 margin-5vh">
         <div class="buttonMenu">
           <router-link class="link w-100" v-bind:to="element.link">
             <span class="flex1">
@@ -56,6 +56,9 @@ export default {
   #menu{
     width: 100%;
   }
+  .block{
+    display: block;
+  }
   .flex{
     display: flex;
   }
@@ -84,5 +87,8 @@ export default {
   }
   .w-100{
     width: 100%;
+  }
+  .margin-5vh{
+    margin-top: 5vh;
   }
 </style>

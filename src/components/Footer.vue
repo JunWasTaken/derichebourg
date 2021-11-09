@@ -26,6 +26,7 @@ export default {
     bottom: 0px;
     border-top: solid 1px darkgrey;
     border-bottom: 10px solid #e3001a;
+    background-color: #f3f3f3;
     width: 100%;
     box-sizing: border-box;
   }
