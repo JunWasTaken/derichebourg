@@ -24,13 +24,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 #logoDerichebourg {
   height: 150px;
   width: auto;
+  margin-top: 45px;
 }
 </style>
