@@ -30,17 +30,22 @@ export default new Router({
     {
       path: '/platforms',
       name: 'platforms',
-      component: Platforms
+      component: Platforms,
+      children: [
+        {
+          path: ''
+        },
+        {
+          path: '/:id',
+          name: 'clients',
+          component: Clients
+        }
+      ]
     },
     {
       path: '/incidents',
       name: 'incidents',
       component: Incidents
-    },
-    {
-      path: '/clients/:id',
-      name: 'clients',
-      component: Clients
     }
   ]
 })

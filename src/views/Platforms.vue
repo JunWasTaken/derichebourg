@@ -6,18 +6,22 @@
     </div>
     <div id="list_platforms">
       <div v-for="platform in platforms" v-bind:key="platform.id" :id="platform.id" class="margin-5vh margin-y-15px platform" v-bind:class="{ grey_bg: platform.isLinkedAnael}">
-        <img :src="`${platform.address_logo}`" :alt="platform.alt" class="logo_platform">
-        <div class="platform_name">{{ platform.name_platform }}</div>
+        <router-link :to="{name: 'clients', params: {id: platform.id, link: platform.lienplatform}}" class="link">
+          <img :src="`${platform.address_logo}`" :alt="platform.alt" class="logo_platform">
+          <div class="platform_name">{{ platform.name_platform }}</div>
+        </router-link>
       </div>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 export default {
   name: 'Platforms',
-  components: {Header},
+  components: {Footer, Header},
   data () {
     return {
       platforms: [
@@ -26,91 +30,104 @@ export default {
           name_platform: 'PIXID',
           address_logo: require('../assets/logo_platforms/logo_pixid.png'),
           alt: 'logo PIXID',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://www.pixid-services.net'
         },
         {
           id: 'coffreo',
           name_platform: 'Coffreo',
           address_logo: require('../assets/logo_platforms/logo_coffreo.png'),
           alt: 'logo Coffreo',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://www.coffreo.com/'
         },
         {
           id: 'gestmax',
           name_platform: 'Gestmax',
           address_logo: require('../assets/logo.png'),
           alt: 'logo Gestmax',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://derichebourg-interim.gestmax.fr/account/login'
         },
         {
           id: 'pilott',
           name_platform: 'Pilott',
           address_logo: require('../assets/logo_platforms/logo_pilott.png'),
           alt: 'logo Pilott',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://hrexplorer.pilott.fr/Authentication/Login'
         },
         {
           id: 'peopulse',
           name_platform: 'Peopulse',
           address_logo: require('../assets/logo_platforms/logo_peopulse.png'),
           alt: 'logo Peopulse',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://ns-sign.peopulse.com/'
         },
         {
-          id: 'BAPS',
+          id: 'baps',
           name_platform: 'BAPS/ Directskills',
           address_logo: require('../assets/logo_platforms/logo_directskills.png'),
           alt: 'logo Directskills',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://www.bapsett.directskills.com/baps-ett-prd/#/accueil'
         },
         {
           id: 'clic_staff',
           name_platform: 'Clic & Staff',
           address_logo: require('../assets/logo_platforms/logo_cs.png'),
           alt: 'logo clic & staff',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://clicandstaff.fr/'
         },
         {
           id: 'fieldglass',
           name_platform: 'Fieldglass',
           address_logo: require('../assets/logo_platforms/logo_fieldglass.png'),
           alt: 'logo fieldglass',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://www.fieldglass.net/?next=%2Faccount_detail.do%3Fcf%3D1'
         },
         {
           id: 'tradeshift',
           name_platform: 'Tradeshift',
           address_logo: require('../assets/logo_platforms/logo_tradeshift.png'),
           alt: 'logo Tradeshift',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://www.fieldglass.net/?next=%2Faccount_detail.do%3Fcf%3D1'
         },
         {
           id: 'ogone',
           name_platform: 'Ogone',
           address_logo: require('../assets/logo_platforms/logo_ogone.png'),
           alt: 'logo Ogone',
-          isLinkedAnael: true
+          isLinkedAnael: true,
+          lienplatform: 'https://www.ingenico.com/fr/login/ogone'
         },
         {
           id: 'chorus',
           name_platform: 'Chorus pro',
           address_logo: require('../assets/logo_platforms/logo_chorus.png'),
           alt: 'logo Chorus',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://chorus-pro.gouv.fr/'
         },
         {
           id: 'basware',
           name_platform: 'Basware',
           address_logo: require('../assets/logo_platforms/logo_basware.png'),
           alt: 'logo Basware',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://www.basware.com/fr-fr/accueil/'
         },
         {
           id: 'tungsten',
           name_platform: 'Tungsten',
           address_logo: require('../assets/logo_platforms/logo_tungsten.png'),
           alt: 'logo Tungsten',
-          isLinkedAnael: false
+          isLinkedAnael: false,
+          lienplatform: 'https://www.tungsten-network.com/'
         }
       ]
     }
@@ -171,5 +188,8 @@ export default {
 }
 .large{
   font-size: large;
+}
+.link{
+  color: black;
 }
 </style>

@@ -3,9 +3,7 @@
     <div id="infos_supplémentaires">
       <span @click="mailToIT" class="link">contacter le support IT</span>
     </div>
-    <div class="signature">
-      Site fait par Alexandra Denos
-    </div>
+
   </footer>
 </template>
 
@@ -22,8 +20,6 @@ export default {
 
 <style scoped>
   footer{
-    position: absolute;
-    bottom: 0px;
     border-top: solid 1px darkgrey;
     border-bottom: 10px solid #e3001a;
     background-color: #f3f3f3;

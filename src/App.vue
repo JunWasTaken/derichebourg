@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/bison-rouge.png" alt="bison rouge" id="logoDerichebourg">
+    <img src="./assets/derichebourg_logo.svg" alt="bison rouge" id="logoDerichebourg">
     <router-view/>
     <Footer/>
   </div>
@@ -25,6 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #logoDerichebourg {
   height: 150px;
