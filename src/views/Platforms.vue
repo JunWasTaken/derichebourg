@@ -166,7 +166,6 @@ export default {
   margin: 15px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .margin-5vh{
   margin-left: 15px;

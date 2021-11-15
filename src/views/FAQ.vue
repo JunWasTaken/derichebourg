@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
+  <div id="FAQ_Accueil">
     <Header/>
-    <h1>{{msg}}</h1>
-    <div>
-      <h2>Bienvenue sur la FAQ Derichebourg.</h2>
+    <div class="container">
+        <form class="container searchbar-container">
+          <input type="text" v-model="searchbar" placeholder="saississez les mots-clés" class="searchbar">
+        </form>
     </div>
-    <Footer/>
   </div>
 </template>
 
@@ -18,11 +18,25 @@ export default {
   components: {Header, Footer},
   data () {
     return {
-      msg: 'hello'
+      searchbar: '',
+      platform: ''
     }
   }
 }
 </script>
-
 <style scoped>
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.searchbar-container{
+  border: #2c3e50 solid 1px;
+  position: relative;
+}
+.searchbar{
+  width: 75%;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+}
 </style>
