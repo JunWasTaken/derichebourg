@@ -12,7 +12,7 @@ export default {
   name: 'Footer',
   methods: {
     mailToIT () {
-      window.location.href = 'mailto:supportIT@derichebourg.com'
+      window.location.href = 'mailto:interim.supportIT@derichebourg.com'
     }
   }
 }

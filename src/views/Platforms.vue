@@ -128,6 +128,14 @@ export default {
           alt: 'logo Tungsten',
           isLinkedAnael: false,
           lienplatform: 'https://www.tungsten-network.com/'
+        },
+        {
+          id: 'randstad',
+          name_platform: 'Randstad',
+          address_logo: require('../assets/logo_platforms/logo_randstad.png'),
+          alt: 'logo Randstad',
+          isLinkedAnael: false,
+          lienplatform: 'https://eflex.randstadsourceright.fr/eflex_login/login.aspx'
         }
       ]
     }

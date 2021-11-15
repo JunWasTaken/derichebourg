@@ -23,7 +23,7 @@
         </div>
       </div>
       <table>
-        <tr v-for="(client, index) in search_client" :key="client.Nom" >
+        <tr v-for="(client, index) in search_client" :key="$route.params.id + client.id" >
           <th v-bind:class="{ light_grey_bg : odd_numbers( index ) }">
             {{ client.Nom }}
           </th>
@@ -52,6 +52,7 @@ export default {
     },
     search_client () {
       return this.get_clients.filter(client => {
+        console.log(this.searchbar)
         return client.Nom.toLowerCase().includes(this.searchbar.toLowerCase())
       })
     }
