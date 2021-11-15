@@ -1,15 +1,24 @@
 <template>
   <div>
     <Header/>
-    <div class="bold large">
-      Note : toutes les plateformes dont le fond est grisée de <span class="grey_bg">cette couleur</span> correspondent aux plateformes fonctionnant en lien avec Anael.
-    </div>
     <div id="list_platforms">
-      <div v-for="platform in platforms" v-bind:key="platform.id" :id="platform.id" class="margin-5vh margin-y-15px platform" v-bind:class="{ grey_bg: platform.isLinkedAnael}">
-        <router-link :to="{name: 'clients', params: {id: platform.id, link: platform.lienplatform}}" class="link">
-          <img :src="`${platform.address_logo}`" :alt="platform.alt" class="logo_platform">
-          <div class="platform_name">{{ platform.name_platform }}</div>
-        </router-link>
+      <div id="pixid_platforms" class="list_platforms border-right flex1">
+        <div class="bold large center-text title_div">Liste des plateformes fonctionnant en lien avec Anael</div>
+        <div v-for="platform in get_pixidPlatforms" v-bind:key="platform.id" :id="platform.id" class="margin-5vh margin-y-15px platform">
+          <router-link :to="{name: 'clients', params: {id: platform.id, link: platform.lienplatform}}" class="link">
+            <img :src="`${platform.address_logo}`" :alt="platform.alt" class="logo_platform">
+            <div class="platform_name">{{ platform.name_platform }}</div>
+          </router-link>
+        </div>
+      </div>
+      <div id="non_pixid_platforms" class="list_platforms border-left flex1">
+        <div class="bold large title_div">Liste des plateformes ne fonctionnant pas en lien avec Anael</div>
+        <div v-for="platform in get_nonPixidPlatforms" v-bind:key="platform.id" :id="platform.id" class="margin-5vh margin-y-15px platform">
+          <router-link :to="{name: 'clients', params: {id: platform.id, link: platform.lienplatform}}" class="link">
+            <img :src="`${platform.address_logo}`" :alt="platform.alt" class="logo_platform">
+            <div class="platform_name">{{ platform.name_platform }}</div>
+          </router-link>
+        </div>
       </div>
     </div>
     <router-view></router-view>
@@ -139,6 +148,14 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    get_pixidPlatforms () {
+      return this.platforms.filter(platform => platform.isLinkedAnael === true)
+    },
+    get_nonPixidPlatforms () {
+      return this.platforms.filter(platform => platform.isLinkedAnael === false)
+    }
   }
 }
 </script>
@@ -146,7 +163,7 @@ export default {
 <style scoped>
 #list_platforms{
   width: 90%;
-  margin: 10px auto;
+  margin: 15px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -197,7 +214,29 @@ export default {
 .large{
   font-size: large;
 }
+.center-text{
+  text-align: center;
+}
+.flex1{
+  flex: 1;
+}
+.border-left{
+  border-left: solid #2c3e50 1px;
+}
+.border-right{
+  border-right: solid 1px #2c3e50;
+}
 .link{
   color: black;
+}
+.list_platforms{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.title_div{
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 </style>

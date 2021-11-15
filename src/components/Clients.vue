@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     get_clients () {
-      var table = require('../assets/json_files/' + this.$route.params.id + '.json')
+      var table = require('../assets/json_files/clients_platforms/' + this.$route.params.id + '.json')
       console.log(table)
       return Object.values(table)
     },
