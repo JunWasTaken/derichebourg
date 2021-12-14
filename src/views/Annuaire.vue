@@ -2,11 +2,12 @@
   <div id="map">
     <Header/>
     <l-map
+      v-if="showMap"
       :zoom="zoom"
       :center="center"
       @update:center="centerUpdate"
       @update:zoom="zoomUpdate"
-      style="height: 80%"
+      style="height: 70vh; width: 80%"
     >
       <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
     </l-map>
@@ -31,13 +32,15 @@ export default {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       center: latLng(48.7860516, 2.438976),
-      zoom: 12,
-      currentZoom: 10
+      zoom: 10,
+      currentZoom: 10,
+      showMap: true
     }
   },
   methods: {
     zoomUpdate (zoom) {
       this.currentZoom = zoom
+      console.log(this.currentZoom)
     },
     centerUpdate (center) {
       this.currentCenter = center
