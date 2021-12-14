@@ -32,9 +32,9 @@ export default {
           text: 'FAQ '
         },
         {
-          id: 'incidents',
-          link: '/incidents',
-          text: 'incidents'
+          id: 'annuaire',
+          link: '/annuaire',
+          text: 'annuaire'
         }
       ]
     }

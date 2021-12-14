@@ -36,9 +36,9 @@ export default {
           icon: 'book'
         },
         {
-          id: 'incidents',
-          link: '/incidents',
-          text: 'Incidents',
+          id: 'annuaire',
+          link: '/annuaire',
+          text: 'Annuaire du groupe',
           icon: 'laptop-medical'
         }
       ]

@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import FAQ from '../views/FAQ'
 import IndexMenu from '../components/Menus/IndexMenu'
 import Platforms from '../views/Platforms'
-import Incidents from '../views/Incidents'
 import Clients from '../components/Clients'
+import Agence from '../views/Agence'
+import Person from '../views/Person'
+import Annuaire from '../views/Annuaire'
 
 library.add(fas)
 
@@ -39,18 +41,35 @@ export default new Router({
       children: [
         {
           path: ''
-        },
-        {
-          path: '/:id',
-          name: 'clients',
-          component: Clients
         }
       ]
     },
     {
-      path: '/incidents',
-      name: 'incidents',
-      component: Incidents
+      path: 'platforms/:id',
+      name: 'clients',
+      component: Clients
+    },
+    {
+      path: '/annuaire',
+      name: 'annuaire',
+      component: Annuaire,
+      children: [
+        {
+          path: ''
+        }
+      ]
+    },
+    {
+      path: 'annuaire/:id_agence',
+      name: 'agence',
+      component: Agence,
+      children: [
+        {
+          path: '/:id_personne',
+          name: 'personne',
+          component: Person
+        }
+      ]
     }
   ]
 })
