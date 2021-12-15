@@ -6,7 +6,9 @@
     "RU1": "51 CHEMIN DES MECHES",
     "RU2": "",
     "CPO": "94000",
-    "VIL": "CRETEIL"
+    "VIL": "CRETEIL",
+    "TLP": "+336 71 90 34 10",
+    "GPS": [48.7860516, 2.438976]
   },
   {
     "AGE": "074",
@@ -15,6 +17,7 @@
     "RU1": "3 IMPASSE MARCEL CHALARD",
     "RU2": "",
     "CPO": "31200",
-    "VIL": "TOULOUSE"
+    "VIL": "TOULOUSE",
+    "GPS": [43.567710, 1.391520]
   }
 ]

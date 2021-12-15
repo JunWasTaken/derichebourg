@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import FAQ from '../views/FAQ'
 import IndexMenu from '../components/Menus/IndexMenu'
 import Platforms from '../views/Platforms'
-import Clients from '../components/Clients'
-import Agence from '../views/Agence'
-import Person from '../views/Person'
 import Annuaire from '../views/Annuaire'
+import Clients from '../components/Clients'
+import Agence from '../components/Annuaire/Agence'
+import Person from '../components/Annuaire/Person'
 
 library.add(fas)
 
