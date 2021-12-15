@@ -47,9 +47,6 @@ export default {
     }
   },
   methods: {
-    get_platformLogo (id) {
-      return require('../assets/logo_platforms/logo_' + id.value + '.png')
-    }
   }
 }
 </script>
