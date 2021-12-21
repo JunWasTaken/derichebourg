@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/derichebourg_logo.svg" alt="bison rouge" id="logoDerichebourg">
+    <img src="./assets/derichebourg_logo.svg" alt="bison rouge" id="logoDerichebourg" class="margin-top-5px">
     <router-view/>
     <Footer/>
   </div>
@@ -10,6 +10,7 @@
 import Footer from './components/Footer'
 import IndexMenu from './components/Menus/IndexMenu'
 import Header from './components/Header'
+import './assets/stylesheet/main.css'
 
 export default {
   name: 'App',
@@ -32,6 +33,5 @@ export default {
 #logoDerichebourg {
   height: 150px;
   width: auto;
-  margin-top: 45px;
 }
 </style>

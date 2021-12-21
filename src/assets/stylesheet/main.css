@@ -1,0 +1,319 @@
+/* Classes relatives aux différents modes de display*/
+.display-inline{
+  display: inline;
+}
+.display-block{
+  display: block;
+}
+
+/* Classes relative aux flexbox */
+.flex{
+  display: flex;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-2{
+  flex: 2;
+}
+.flex-3{
+  flex: 3;
+}
+
+/* Classes relative à la largeur et hauteur des éléments */
+.width-100percent{
+  width: 100%;
+}
+.width-80percent{
+  width: 80%;
+}
+.width-75percent{
+  width: 75%;
+}
+.width-100vh{
+  width: 100vh;
+}
+.width-80vh{
+  width: 80vh;
+}
+.width-75vh{
+  width: 75vh;
+}
+
+.height-100percent{
+  height: 100%;
+}
+.height-80percent{
+  heigth: 80%;
+}
+.height-75percent{
+  height: 75%;
+}
+.height-100vh{
+  height: 100vh;
+}
+.height-80vh{
+  height: 80vh;
+}
+.height-75vh{
+  height: 75vh;
+}
+
+/* Classes relatives au margin */
+.margin-x-15px{
+  margin-left: 15px;
+  margin-right:15px;
+}
+.margin-x-10px{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.margin-x-5px{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.margin-y-15px{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.margin-y-10px{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.margin-y-5px{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.margin-top-15px{
+  margin-top: 15px;
+}
+.margin-top-10px{
+  margin-top: 10px;
+}
+.margin-top-5px{
+  margin-top: 5px;
+}
+.margin-bottom-15px{
+  margin-bottom: 15px;
+}
+.margin-bottom-10px{
+  margin-bottom: 10px;
+}
+.margin-bottom-5px{
+  margin-bottom: 5px;
+}
+
+.margin-left-15px{
+  margin-left: 15px;
+}
+.margin-left-10px{
+  margin-left: 10px;
+}
+.margin-left-5px{
+  margin-left: 5px;
+}
+
+.margin-right-15px{
+  margin-right: 15px;
+}
+.margin-right-10px{
+  margin-right: 10px;
+}
+.margin-right-5px{
+  margin-right: 5px;
+}
+
+/* Classes relatives au padding */
+.padding-top-15px{
+  padding-top : 15px;
+}
+.padding-top-10px{
+  padding-top: 10px;
+}
+.padding-top-5px{
+  padding-top: 5px;
+}
+
+.padding-bottom-15px{
+  padding-bottom : 15px;
+}
+.padding-bottom-10px{
+  padding-bottom: 10px;
+}
+.padding-bottom-5px{
+  padding-bottom: 5px;
+}
+
+.padding-right-15px{
+  padding-right : 15px;
+}
+.padding-right-10px{
+  padding-right: 10px;
+}
+.padding-right-5px{
+  padding-right: 5px;
+}
+
+.padding-left-15px{
+  padding-left : 15px;
+}
+.padding-left-10px{
+  padding-top: 10px;
+}
+.padding-left-5px{
+  padding-top: 5px;
+}
+
+/* Classes relatives à la taille du texte */
+.text-big{
+  font-size: large;
+}
+.text-bigger{
+  font-size: x-large;
+}
+.text-medium{
+  font-size: medium;
+}
+.text-small{
+  font-size: small;
+}
+.text-smaller{
+  font-size: x-small;
+}
+
+/* Classes relatives aux poids du texte (bold, normal, etc...)*/
+.text-bulk{
+  font-weight: bold;
+}
+.text-normal{
+  font-weight: normal;
+}
+.text-light{
+  font-weight: lighter;
+}
+
+/* Classes relatives à l'alignement du texte */
+.text-align-left{
+  text-align: left;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-align-right{
+  text-align: right;
+}
+.text-align-justify{
+  text-align: justify;
+}
+
+/* Classes relatives au z-index (de 1 à 6) */
+.z-index_1{
+  z-index: 1;
+}
+.z-index_2{
+  z-index: 2;
+}
+.z-index_3{
+  z-index: 3;
+}
+.Z-index_4{
+  z-index: 4;
+}
+.z-index_5{
+  z-index: 5;
+}
+.z-index_6{
+  z-index: 6;
+}
+
+/* Classes relatives à l'overflow */
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-visible{
+  overflow: visible;
+}
+.overflow-scroll{
+  overflow: scroll;
+}
+.overflow-auto{
+  overflow: auto;
+}
+
+/* Classes relatives à l'épaisseur des bordures */
+.border-bottom-1px{
+  border-bottom: solid 1px;
+}
+.border-bottom-2px{
+  border-bottom: solid 2px;
+}
+.border-bottom-3px{
+  border-bottom: solid 3px;
+}
+.border-bottom-4px{
+  border-bottom: solid 4px;
+}
+.border-bottom-5px{
+  border-bottom: solid 5px;
+}
+
+.border-top-1px{
+  border-top: solid 1px;
+}
+.border-top-2px{
+  border-bottom: solid 2px;
+}
+.border-top-3px{
+  border-bottom: solid 3px;
+}
+.border-top-4px{
+  border-bottom: solid 4px;
+}
+.border-top-5px{
+  border-bottom: solid 5px;
+}
+
+.border-left-1px{
+  border-left: solid 1px;
+}
+.border-left-2px{
+  border-left: solid 2px;
+}
+.border-left-3px{
+  border-left: solid 3px;
+}
+.border-left-4px{
+  border-left: solid 4px;
+}
+.border-left-5px{
+  border-left: solid 5px;
+}
+
+.border-right-1px{
+  border-bottom: solid 1px;
+}
+.border-right-2px{
+  border-bottom: solid 2px;
+}
+.border-right-3px{
+  border-bottom: solid 3px;
+}
+.border-right-4px{
+  border-bottom: solid 4px;
+}
+.border-right-5px{
+  border-bottom: solid 5px;
+}
+
+/* Classes relatives aux couleurs des bordures */
+.border-black{
+  border-color: #000;
+}
+.border-red{
+  border-color: #e3001a;
+}
+.border-grey{
+  border-color: #2c3e50;
+}

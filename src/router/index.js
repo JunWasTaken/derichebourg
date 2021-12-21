@@ -26,48 +26,48 @@ export default new Router({
     },
     {
       path: '/faq',
-      name: 'faq',
       component: FAQ,
       children: [
         {
-          path: ''
+          path: '',
+          name: 'faq'
         }
       ]
     },
     {
       path: '/platforms',
-      name: 'platforms',
       component: Platforms,
       children: [
         {
-          path: ''
+          path: '',
+          name: 'platforms'
+        },
+        {
+          path: '/platforms/:id',
+          name: 'clients',
+          component: Clients
         }
       ]
-    },
-    {
-      path: 'platforms/:id',
-      name: 'clients',
-      component: Clients
     },
     {
       path: '/annuaire',
-      name: 'annuaire',
       component: Annuaire,
       children: [
         {
-          path: ''
-        }
-      ]
-    },
-    {
-      path: 'annuaire/:id_agence',
-      name: 'agence',
-      component: Agence,
-      children: [
+          path: '',
+          name: 'annuaire'
+        },
         {
-          path: '/:id_personne',
-          name: 'personne',
-          component: Person
+          path: '/annuaire/:id_agence',
+          name: 'agence',
+          component: Agence,
+          children: [
+            {
+              path: '/annuaire/:id_agence/:id_personne',
+              name: 'personne',
+              component: Person
+            }
+          ]
         }
       ]
     }

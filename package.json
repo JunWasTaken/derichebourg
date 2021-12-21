@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.6",
     "leaflet": "^1.7.1",
     "leaflet-geosearch": "^3.6.0",
+    "leaflet.gridlayer.googlemutant": "^0.13.4",
     "vue": "^2.5.2",
     "vue-fontawesome": "^0.0.2",
     "vue-router": "^3.0.1",
