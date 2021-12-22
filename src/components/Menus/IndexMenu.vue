@@ -39,7 +39,7 @@ export default {
           id: 'annuaire',
           link: '/annuaire',
           text: 'Annuaire du groupe',
-          icon: 'laptop-medical'
+          icon: 'id-card'
         }
       ]
     }

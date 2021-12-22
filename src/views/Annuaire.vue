@@ -1,18 +1,20 @@
 <template>
   <div>
-    <Header/>
+    <div id="header">
+      <Header/>
+    </div>
     <div id="content" class="flex">
-      <div id="searchMenu" class="flex-1">
-        <div id="searchbar" class="margin-bottom-10px flex">
+      <div id="searchMenu" class="flex-1 height-100%">
+        <div id="searchbar" class="margin-bottom-10px flex margin-x-5px">
           <input type="text" id="search" v-model="searchbar"
                  placeholder="rechercher une agence"
-                 class="flex-1 margin-x-5px padding-bottom-10px padding-top-10px padding-left-5px padding-right-5px  border-1px border-radius-10px border-grey">
+                 class="width-100percent padding-bottom-10px padding-top-10px padding-left-5px padding-right-5px  border-1px border-radius-10px border-red">
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
                :key="agency.N_ANAEL"
-               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-1px border-red agency"
-               @click="centerUpdate(agency.GPS)">
+               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-2px border-red agency"
+               @click="clickSearchResult(agency)">
             <div class="margin-left-10px">
               Agence n° {{ agency.N_ANAEL }}
               <div class="flex">
@@ -30,14 +32,13 @@
           </div>
         </div>
       </div>
-      <div id="map_derichebourg" class="flex-3" style="height: 12px">
+      <div id="map_derichebourg" class="flex-3">
         <l-map
           v-if="showMap"
           :zoom="zoom"
           :center="center"
           @update:center="centerUpdate"
           @update:zoom="zoomUpdate"
-          style="height: 70vh;"
           class="z-index_1"
         >
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
@@ -54,7 +55,7 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-            <l-popup class="border-left-3px border-red padding-left-5px"
+            <l-popup class="padding-left-5px"
                      :options="{className:'custom-leaflet-popup'}"
             >
               <table>
@@ -179,6 +180,19 @@ export default {
         this.gpsCoordinates.push(element.y)
       })
       console.log(this.gpsCoordinates)
+    },
+    clickSearchResult (agency) {
+      this.center = agency.GPS
+      this.$router.push({name: 'agence',
+        params: {
+          id_agence: agency.N_ANAEL,
+          nom_agence: `${agency.VILLE} Interim`,
+          addresse_agence: `${agency.ADRESSE} ${agency.CP} ${agency.VILLE}`,
+          tel_agence: agency.TEL,
+          mail_agence: agency.MAIL,
+          gps_agence: agency.GPS
+        }
+      })
     }
   }
 }
@@ -188,11 +202,9 @@ export default {
 a{
   color: #e3001a;
 }
-
 .height-650px{
   height: 628px;
 }
-
 .agency{
   transition-duration: 0.35s;
 }
@@ -200,31 +212,30 @@ a{
   background-color: rgba(241, 113, 128, 0.9);
   color: white;
 }
-.agency:hover a{
-  color: inherit;
-}
-
-.custom-leaflet-popup, .leaflet-popup-content-wrapper {
-  background:#2c3e50;
-  color:#fff;
-  font-size:12px;
+.custom-leaflet-popup{
   font-family: GillSansSTD;
-  line-height:10px;
+  border-left: solid #e3001a 3px;
   border-radius: 10px;
 }
-
-.custom-leaflet-popup, .leaflet-popup-content-wrapper a {
-  color:rgba(255,255,255,0.1);
+.custom-leaflet-popup  .leaflet-popup-content-wrapper {
+  font-family: GillSansSTD;
+  border-left: solid #e3001a 3px;
+  border-radius: 10px;
 }
-
-.custom-leaflet-popup, .leaflet-popup-tip-container {
-  width:30px;
-  height:15px;
+.custom-leaflet-popup .leaflet-popup-content-wrapper a {
+  color: #e3001a;
 }
-
-.custom-leaflet-popup, .leaflet-popup-tip {
+.custom-leaflet-popup .leaflet-popup-tip-container {
+  width: 50px;
+  height: 15px;
+}
+.custom-leaflet-popup .leaflet-popup-tip {
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+.custom-leaflet-popup div{
+  font-family: GillSansSTD;
 }
 </style>
