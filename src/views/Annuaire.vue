@@ -2,14 +2,16 @@
   <div>
     <Header/>
     <div id="content" class="flex">
-      <div id="searchMenu" class="flex-1 height-100%">
-        <div id="searchbar" class="margin-bottom-10px">
-          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="width-100percent">
+      <div id="searchMenu" class="flex-1">
+        <div id="searchbar" class="margin-bottom-10px flex">
+          <input type="text" id="search" v-model="searchbar"
+                 placeholder="rechercher une agence"
+                 class="flex-1 margin-x-5px padding-bottom-10px padding-top-10px padding-left-5px padding-right-5px  border-1px border-radius-10px border-grey">
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
                :key="agency.N_ANAEL"
-               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-3px border-red agency"
+               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-1px border-red agency"
                @click="centerUpdate(agency.GPS)">
             <div class="margin-left-10px">
               Agence n° {{ agency.N_ANAEL }}
@@ -52,7 +54,9 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-            <l-popup>
+            <l-popup class="border-left-3px border-red padding-left-5px"
+                     :options="{className:'custom-leaflet-popup'}"
+            >
               <table>
                 <tr>
                   <td>Num agence : </td>
@@ -84,14 +88,16 @@
                 </tr>
               </table>
               <router-link :to="{name: 'agence', params : {
-              id_agence : agency.N_ANAEL,
-              nom_agence : `${agency.VILLE} Interim`,
-              addresse_agence : `${agency.ADRESSE} ${agency.CP} ${agency.VILLE}`,
-              tel_agence : agency.TEL,
-              mail_agence : agency.MAIL,
-              gps_agence : agency.GPS
-              }
-            }">
+                  id_agence : agency.N_ANAEL,
+                  nom_agence : `${agency.VILLE} Interim`,
+                  addresse_agence : `${agency.ADRESSE} ${agency.CP} ${agency.VILLE}`,
+                  tel_agence : agency.TEL,
+                  mail_agence : agency.MAIL,
+                  gps_agence : agency.GPS
+                  }
+                }"
+                class="text-align-center display-block width-100percent"
+              >
                 plus d'informations
               </router-link>
             </l-popup>
@@ -179,14 +185,46 @@ export default {
 </script>
 
 <style scoped>
+a{
+  color: #e3001a;
+}
+
 .height-650px{
   height: 628px;
 }
+
 .agency{
   transition-duration: 0.35s;
 }
 .agency:hover{
-  background-color: rgba(227, 0, 26, 0.9);
+  background-color: rgba(241, 113, 128, 0.9);
   color: white;
+}
+.agency:hover a{
+  color: inherit;
+}
+
+.custom-leaflet-popup, .leaflet-popup-content-wrapper {
+  background:#2c3e50;
+  color:#fff;
+  font-size:12px;
+  font-family: GillSansSTD;
+  line-height:10px;
+  border-radius: 10px;
+}
+
+.custom-leaflet-popup, .leaflet-popup-content-wrapper a {
+  color:rgba(255,255,255,0.1);
+}
+
+.custom-leaflet-popup, .leaflet-popup-tip-container {
+  width:30px;
+  height:15px;
+}
+
+.custom-leaflet-popup, .leaflet-popup-tip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 </style>

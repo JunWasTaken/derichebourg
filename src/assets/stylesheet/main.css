@@ -1,3 +1,8 @@
+/* Font family */
+@font-face {
+  font-family: 'GillSansSTD';
+  src: url('../fonts/GillSansStd.otf') format('opentype');
+}
 /* Classes relatives aux différents modes de display*/
 .display-inline{
   display: inline;
@@ -160,10 +165,10 @@
   padding-left : 15px;
 }
 .padding-left-10px{
-  padding-top: 10px;
+  padding-left: 10px;
 }
 .padding-left-5px{
-  padding-top: 5px;
+  padding-left: 5px;
 }
 
 /* Classes relatives à la taille du texte */
@@ -243,6 +248,22 @@
 }
 
 /* Classes relatives à l'épaisseur des bordures */
+.border-1px{
+  border: solid 1px;
+}
+.border-2px{
+  border: solid 2px;
+}
+.border-3px{
+  border: solid 3px;
+}
+.border-4px{
+  border: solid 4px;
+}
+.border-5px{
+  border: solid 5px;
+}
+
 .border-bottom-1px{
   border-bottom: solid 1px;
 }
@@ -307,6 +328,41 @@
   border-bottom: solid 5px;
 }
 
+/* Classes relatives à l'angle des bordures*/
+.border-radius-5px{
+  border-radius: 5px;
+}
+.border-radius-10px{
+  border-radius: 10px;
+}
+.border-radius-15px{
+  border-radius: 15px;
+}
+.border-left-radius-5px{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.border-left-radius-15px{
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.border-left-radius-15px{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.border-right-radius-5px{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.border-right-radius-15px{
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.border-left-right-15px{
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
 /* Classes relatives aux couleurs des bordures */
 .border-black{
   border-color: #000;
@@ -315,5 +371,5 @@
   border-color: #e3001a;
 }
 .border-grey{
-  border-color: #2c3e50;
+  border-color: #989898;
 }
