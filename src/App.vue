@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="font-family: GillSansSTD">
     <img src="./assets/derichebourg_logo.svg" alt="bison rouge" id="logoDerichebourg" class="margin-top-5px">
     <router-view/>
     <Footer/>
@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import IndexMenu from './components/Menus/IndexMenu'
 import Header from './components/Header'
 import './assets/stylesheet/main.css'
+import './assets/stylesheet/fonts.css'
 
 export default {
   name: 'App',

@@ -52,7 +52,7 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-            <l-popup>
+            <l-popup :options="{'className':'custom-leaflet-popup'}">
               <table>
                 <tr>
                   <td>Num agence : </td>
@@ -112,6 +112,7 @@ import { latLng } from 'leaflet'
 import {OpenStreetMapProvider} from 'leaflet-geosearch'
 import 'leaflet/dist/leaflet.css'
 import '../assets/stylesheet/main.css'
+import '../assets/stylesheet/fonts.css'
 
 const provider = new OpenStreetMapProvider()
 
@@ -188,5 +189,12 @@ export default {
 .agency:hover{
   background-color: rgba(227, 0, 26, 0.9);
   color: white;
+}
+.agency:hover a{
+  color: white;
+}
+
+.custom-leaflet-popup > .leaflet-popup-content-wrapper{
+  border: 2px solid #e3001a;
 }
 </style>
