@@ -11,10 +11,10 @@
           Clients liés à {{$route.params.id}}
         </h1>
         <div class="flex">
-          <div class="flex1 link">
+          <div class="flex-1 link">
             doc
           </div>
-          <div class="flex1 link" v-on:click="move($route.params.link)">
+          <div class="flex-1 link" v-on:click="move($route.params.link)">
             lien
           </div>
         </div>
@@ -36,6 +36,7 @@
 <script>
 import Header from './Header'
 import Footer from './Footer'
+import '../assets/stylesheet/main.css'
 export default {
   name: 'Clients',
   components: {Footer, Header},
@@ -104,12 +105,6 @@ h1{
   right: 5px;
   color: #e3001a;
 }
-.flex{
-  display: flex;
-}
-.flex1{
-  flex: 1;
-}
 .link{
   border: 1px #2c3e50 solid;
   padding: 5px;
@@ -127,16 +122,7 @@ h1{
 .searchbar-container{
   box-sizing: content-box;
 }
-.searchbar{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  font-size: large;
-  width: 100%;
-  box-sizing: border-box;
-}
+
 .header {
   position: sticky;
   top: 0px;

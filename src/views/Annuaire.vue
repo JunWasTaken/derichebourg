@@ -4,7 +4,7 @@
     <div id="content" class="flex">
       <div id="searchMenu" class="flex-1 height-100%">
         <div id="searchbar" class="margin-bottom-10px">
-          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="width-100percent">
+          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="searchbar border-rad">
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
