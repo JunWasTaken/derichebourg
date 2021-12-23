@@ -407,8 +407,46 @@
 .border-red{
   border-color: #e3001a;
 }
+.border-yellow{
+  border-color: #facf22;
+}
+.border-green{
+  border-color: #018f01;
+}
+.border-blue{
+  border-color: #1E90FFFF;
+}
 .border-grey{
   border-color: #2c3e50;
+}
+.border-black{
+  border-color: #000;
+}
+.border-white{
+  border-color: #fff;
+}
+
+/* Ajout de classes relatives à différentes couleurs pouvant être utilisées */
+.red{
+  color: #e3001a;
+}
+.yellow{
+  color: #facf22;
+}
+.green{
+  color: #018f01;
+}
+.blue{
+  color: #1E90FF;
+}
+.grey{
+  color: #2c3e50;
+}
+.black{
+  color: black;
+}
+.white{
+  color: white;
 }
 
 /* Classes relatives a divers éléments utilisés fréquement*/
@@ -422,7 +460,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-  font-size: large;
   flex: 1;
   box-sizing: border-box;
 }

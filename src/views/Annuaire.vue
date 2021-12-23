@@ -3,8 +3,8 @@
     <Header/>
     <div id="content" class="flex">
       <div id="searchMenu" class="flex-1 height-100%">
-        <div id="searchbar" class="margin-bottom-10px border-radius-5px searchbar-container">
-          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="searchbar border-rad">
+        <div id="searchbar" class="margin-bottom-10px searchbar-container">
+          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="searchbar border-1px border-red border-radius-5px margin-right-5px margin-left-5px">
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
