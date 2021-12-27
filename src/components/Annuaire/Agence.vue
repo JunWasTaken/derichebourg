@@ -100,9 +100,6 @@ export default {
   position: absolute;
   top: 5px;
   right: 5px;
-  color: #e3001a;
-}
-.light_grey_bg{
-  background-color: #b9b9b9;
+  color: #e3001a;Zound-color: #b9b9b9;
 }
 </style>

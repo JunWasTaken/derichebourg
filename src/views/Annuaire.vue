@@ -2,17 +2,9 @@
   <div>
     <Header/>
     <div id="content" class="flex">
-<<<<<<< HEAD
-      <div id="searchMenu" class="flex-1">
-        <div id="searchbar" class="margin-bottom-10px flex">
-          <input type="text" id="search" v-model="searchbar"
-                 placeholder="rechercher une agence"
-                 class="flex-1 margin-x-5px padding-bottom-10px padding-top-10px padding-left-5px padding-right-5px  border-1px border-radius-10px border-grey">
-=======
       <div id="searchMenu" class="flex-1 height-100%">
         <div id="searchbar" class="margin-bottom-10px searchbar-container">
           <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="searchbar border-1px border-red border-radius-5px margin-right-5px margin-left-5px">
->>>>>>> 50494f2268f6c8dd571136ed1ef9bf86ac6b7961
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
@@ -60,13 +52,7 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-<<<<<<< HEAD
-            <l-popup class="border-left-3px border-red padding-left-5px"
-                     :options="{className:'custom-leaflet-popup'}"
-            >
-=======
             <l-popup :options="{'className':'custom-leaflet-popup'}">
->>>>>>> 50494f2268f6c8dd571136ed1ef9bf86ac6b7961
               <table>
                 <tr>
                   <td>Num agence : </td>
@@ -211,39 +197,8 @@ a{
   background-color: rgba(241, 113, 128, 0.9);
   color: white;
 }
-.agency:hover a{
-<<<<<<< HEAD
-  color: inherit;
-}
-
-.custom-leaflet-popup, .leaflet-popup-content-wrapper {
-  background:#2c3e50;
-  color:#fff;
-  font-size:12px;
-  font-family: GillSansSTD;
-  line-height:10px;
-  border-radius: 10px;
-}
-
-.custom-leaflet-popup, .leaflet-popup-content-wrapper a {
-  color:rgba(255,255,255,0.1);
-}
-
-.custom-leaflet-popup, .leaflet-popup-tip-container {
-  width:30px;
-  height:15px;
-}
-
-.custom-leaflet-popup, .leaflet-popup-tip {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-=======
-  color: white;
-}
 
 .custom-leaflet-popup > .leaflet-popup-content-wrapper{
   border: 2px solid #e3001a;
->>>>>>> 50494f2268f6c8dd571136ed1ef9bf86ac6b7961
 }
 </style>
