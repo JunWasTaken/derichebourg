@@ -39,10 +39,11 @@
       </div>
       <div id="employee">
         <h2>Liste des assistant.e.s d'agence</h2>
-        <div v-for="employee in get_employees"
+        <div v-for="(employee, index) in get_employees"
              :key="`${employee.PS1NOM}_${employee.PS1PRE}`"
              :id="`${employee.PS1NOM}_${employee.PS1PRE}`"
-             class="text-align-left"
+             class="text-align-left padding-top-5px padding-bottom-5px padding-left-5px"
+             :class="{ light_grey_bg : oddNumbers(index) }"
         >
           <span class="text-bulk">{{employee.PS1NOM}} {{employee.PS1PRE}}</span>
         </div>
@@ -68,6 +69,11 @@ export default {
       console.log(list)
       return list
     }
+  },
+  methods: {
+    oddNumbers (index) {
+      return index % 2 === 0
+    }
   }
 }
 </script>
@@ -84,7 +90,6 @@ export default {
 .content{
   width: 80%;
   height: 80%;
-  padding: 0 15px 15px 5px;
   background: white;
   margin: 5% auto;
   border-radius: 10px;
@@ -96,5 +101,8 @@ export default {
   top: 5px;
   right: 5px;
   color: #e3001a;
+}
+.light_grey_bg{
+  background-color: #b9b9b9;
 }
 </style>
