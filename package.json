@@ -20,6 +20,7 @@
     "leaflet.gridlayer.googlemutant": "^0.13.4",
     "vue": "^2.5.2",
     "vue-fontawesome": "^0.0.2",
+    "vue-organization-chart": "^1.1.6",
     "vue-router": "^3.0.1",
     "vue2-leaflet": "^2.7.1"
   },

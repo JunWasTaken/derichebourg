@@ -11,7 +11,8 @@
     },
     "MAIL": "interim.albert@derichebourg.com",
     "RS": "DESQUESNES Laetitia",
-    "GPS": [50.0032958984375, 2.6478796005249023]
+    "GPS": [50.0032958984375, 2.6478796005249023],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800537,
@@ -25,7 +26,8 @@
     },
     "MAIL": "interim.annecy@derichebourg.com",
     "RS": "TREINS Ophélie",
-    "GPS": [45.9063206, 6.1231377]
+    "GPS": [45.9063206, 6.1231377],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801311,
@@ -39,7 +41,8 @@
     },
     "MAIL": "interim.arras@derichebourg.com",
     "RS": "",
-    "GPS": [50.2882173, 2.7806839]
+    "GPS": [50.2882173, 2.7806839],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800743,
@@ -53,7 +56,8 @@
     },
     "MAIL": "interim.asnieres@derichebourg.com",
     "RS": "LACASSE Christophe",
-    "GPS": [48.9164354, 2.3096104]
+    "GPS": [48.9164354, 2.3096104],
+    "IDF": true
   },
   {
     "SIRET": 60204463800974,
@@ -67,7 +71,8 @@
     },
     "MAIL": "interim.bayonne@derichebourg.com",
     "RS": "PENET Anne-Sophie",
-    "GPS": [43.467649, -1.4924859]
+    "GPS": [43.467649, -1.4924859],
+    "Ouest": true
   },
   {
     "SIRET": 60204463801048,
@@ -81,7 +86,8 @@
     },
     "MAIL": "interim.beauvais@derichebourg.com",
     "RS": "DESQUESNES Laetitia",
-    "GPS": [49.4309595,2.0809946]
+    "GPS": [49.4309595,2.0809946],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800768,
@@ -95,7 +101,8 @@
     },
     "MAIL": "interim.bordeaux@derichebourg.com",
     "RS": "",
-    "GPS": [44.8609336, -0.6005641]
+    "GPS": [44.8609336, -0.6005641],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800867,
@@ -123,7 +130,8 @@
     },
     "MAIL": "interim.canejan@derichebourg,com",
     "RS": "",
-    "GPS": [44.7766484, -0.6597244]
+    "GPS": [44.7766484, -0.6597244],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800875,
@@ -137,7 +145,8 @@
     },
     "MAIL": "interim.cannes@derichebourg.com",
     "RS": "AMORUSO Julie",
-    "GPS": [43.5493085, 6.9805244]
+    "GPS": [43.5493085, 6.9805244],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801113,
@@ -151,7 +160,8 @@
     },
     "MAIL": "interim.rennes@derichebourg.com",
     "RS": "",
-    "GPS": [48.1131713, -1.6036801]
+    "GPS": [48.1131713, -1.6036801],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800826,
@@ -165,7 +175,8 @@
     },
     "MAIL": "interim.rungis@derichebourg.com",
     "RS": "LACASSE Christophe",
-    "GPS": [48.760014, 2.363114]
+    "GPS": [48.760014, 2.363114],
+    "IDF": true
   },
   {
     "SIRET": 60204463801204,
@@ -179,7 +190,8 @@
     },
     "MAIL": "interim.clermont-ferrand@derichebourg.com",
     "RS": "",
-    "GPS": [45.7720141, 3.1250505]
+    "GPS": [45.7720141, 3.1250505],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800834,
@@ -193,7 +205,8 @@
     },
     "MAIL": "interim.compiegne@derichebourg.com",
     "RS": "",
-    "GPS": [49.4178184, 2.8273046]
+    "GPS": [49.4178184, 2.8273046],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801139,
@@ -221,7 +234,8 @@
     },
     "MAIL": "interim.evreux@derichebourg.com",
     "RS": "DEVE Stéphanie",
-    "GPS": [49.0220291, 1.1510922]
+    "GPS": [49.0220291, 1.1510922],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801022,
@@ -235,7 +249,8 @@
     },
     "MAIL": "interim.dijon@derichebourg.com",
     "RS": "CREUZET Nelly",
-    "GPS": [47.3539577, 5.0252725]
+    "GPS": [47.3539577, 5.0252725],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801220,
@@ -249,7 +264,8 @@
     },
     "MAIL": "interim.caen@derichebourg.com",
     "RS": "",
-    "GPS": [49.1430281, -0.3429047]
+    "GPS": [49.1430281, -0.3429047],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801105,
@@ -263,7 +279,8 @@
     },
     "MAIL": "interim.toulon@derichebourg.com",
     "RS": "AMORUSO Julie",
-    "GPS": [43.141028, 6.0089947]
+    "GPS": [43.141028, 6.0089947],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801238,
@@ -277,7 +294,8 @@
     },
     "MAIL": "interim.lemans@derichebourg.com",
     "RS": "",
-    "GPS": [48.0022492, 0.196228]
+    "GPS": [48.0022492, 0.196228],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801105,
@@ -291,7 +309,8 @@
     },
     "MAIL": "interim.lieusaint@derichebourg.com",
     "RS": "LACASSE Christophe",
-    "GPS": [48.6252338, 2.5625348]
+    "GPS": [48.6252338, 2.5625348],
+    "IDF": true
   },
   {
     "SIRET": 60204463801246,
@@ -305,7 +324,8 @@
     },
     "MAIL": "interim.lievin@derichebourg.com",
     "RS": "",
-    "GPS": [50.4192163, 2.7726357]
+    "GPS": [50.4192163, 2.7726357],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801071,
@@ -319,7 +339,8 @@
     },
     "MAIL": "interim.lille@derichebourg.com",
     "RS": "FLAMME Florian",
-    "GPS": [50.6335561, 3.0706794]
+    "GPS": [50.6335561, 3.0706794],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800750,
@@ -333,7 +354,8 @@
     },
     "MAIL": "interim.lyon@derichebourg.com",
     "RS": "JACQUIN Estelle",
-    "GPS": [45.7450342, 4.825081]
+    "GPS": [45.7450342, 4.825081],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800917,
@@ -347,7 +369,8 @@
     },
     "MAIL": "interim.marseille@derichebourg.com",
     "RS": "FABRE Christine",
-    "GPS": [43.2807165, 5.3931746]
+    "GPS": [43.2807165, 5.3931746],
+    "Ouest" : true
   },
   {
     "SIRET": 60204463801055,
@@ -361,7 +384,8 @@
     },
     "MAIL": "interim.marseille-tertiaire@derichebourg.com",
     "RS": "FABRE Christine",
-    "GPS": [43.3009385, 5.3704106]
+    "GPS": [43.3009385, 5.3704106],
+    "Ouest": true
   },
   {
     "SIRET": 60204463801378,
@@ -375,7 +399,8 @@
     },
     "MAIL": "interim.montargis@derichebourg.com",
     "RS": "CREUZET Nelly",
-    "GPS": [48.0012012, 2.7305974]
+    "GPS": [48.0012012, 2.7305974],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801154,
@@ -389,7 +414,8 @@
     },
     "MAIL": "interim.montauban@derichebourg.com",
     "RS": "DUPUIS Emilie",
-    "GPS": [46.8053138, 4.8434746]
+    "GPS": [46.8053138, 4.8434746],
+    "Ouest": true
   },
   {
     "SIRET": 60204463801030,
@@ -403,7 +429,8 @@
     },
     "MAIL": "interim.montigny@derichebourg.com",
     "RS": "LACASSE Christophe",
-    "GPS": [48.7833802,2.0443902]
+    "GPS": [48.7833802,2.0443902],
+    "IDF": true
   },
   {
     "SIRET": 60204463801279,
@@ -431,7 +458,8 @@
     },
     "MAIL": "interim.montpellier@derichebourg.com",
     "RS": "",
-    "GPS": [43.5791039, 3.8630376]
+    "GPS": [43.5791039, 3.8630376],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801121,
@@ -459,7 +487,8 @@
     },
     "MAIL": "interim.nantes@derichebourg.com",
     "RS": "",
-    "GPS": [47.2086861, -1.5687837]
+    "GPS": [47.2086861, -1.5687837],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800578,
@@ -473,7 +502,8 @@
     },
     "MAIL": "interim.nice@derichebourg.com",
     "RS": "AMORUSO Julie",
-    "GPS": [43.6673073, 7.213955]
+    "GPS": [43.6673073, 7.213955],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800784,
@@ -487,7 +517,8 @@
     },
     "MAIL": "interim.orleans@derichebourg.com",
     "RS": "CREUZET Nelly",
-    "GPS": [47.9053652, 1.9093163]
+    "GPS": [47.9053652, 1.9093163],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800958,
@@ -501,7 +532,8 @@
     },
     "MAIL": "interim.reims@derichebourg.com",
     "RS": "",
-    "GPS": [49.2443068, 4.0393372]
+    "GPS": [49.2443068, 4.0393372],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801337,
@@ -515,7 +547,8 @@
     },
     "MAIL": "interim.rochefort@derichebourg.com",
     "RS": "",
-    "GPS": [45.936091, -0.9614816]
+    "GPS": [45.936091, -0.9614816],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800982,
@@ -529,7 +562,8 @@
     },
     "MAIL": "interim.rouen@derichebourg.com",
     "RS": "DEVE Stéphanie",
-    "GPS": [49.4386201, 1.0965606]
+    "GPS": [49.4386201, 1.0965606],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800545,
@@ -543,7 +577,8 @@
     },
     "MAIL": "interim.rumilly@derichebourg.com",
     "RS": "TREINS Ophélie",
-    "GPS": [45.8658806, 5.9435886]
+    "GPS": [45.8658806, 5.9435886],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800842,
@@ -557,7 +592,8 @@
     },
     "MAIL": "interim.stquentin@derichebourg.com",
     "RS": "",
-    "GPS": [45.6575164, 5.1027959]
+    "GPS": [45.6575164, 5.1027959],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801014,
@@ -571,7 +607,8 @@
     },
     "MAIL": "interim.strasbourg@derichebourg.com",
     "RS": "VIGNEULLE Anaïs",
-    "GPS": [48.5829652, 7.7477181]
+    "GPS": [48.5829652, 7.7477181],
+    "Ouest": false
   },
   {
     "SIRET": 60204463800461,
@@ -585,7 +622,8 @@
     },
     "MAIL": "interim.tarbes@derichebourg.com",
     "RS": "PENET Anne-Sophie",
-    "GPS": [43.1791762, -0.0003809]
+    "GPS": [43.1791762, -0.0003809],
+    "Ouest": true
   },
   {
     "SIRET": 60204463800511,
@@ -599,7 +637,8 @@
     },
     "MAIL": "interim.thionville@derichebourg.com",
     "RS": "VIGNEULLE Anaïs",
-    "GPS": [49.3559595, 6.1393673]
+    "GPS": [49.3559595, 6.1393673],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801006,
@@ -613,7 +652,8 @@
     },
     "MAIL": "interim.torcy@derichebourg.com",
     "RS": "LACASSE Christophe",
-    "GPS": [48.8455533, 2.6539905]
+    "GPS": [48.8455533, 2.6539905],
+    "IDF": true
   },
   {
     "SIRET": 60204463801162,
@@ -627,7 +667,8 @@
     },
     "MAIL": "interim.toulouse@derichebourg.com",
     "RS": "DUPUIS Emilie",
-    "GPS": [43.5677064, 1.3915208]
+    "GPS": [43.5677064, 1.3915208],
+    "Ouest": true
   },
   {
     "SIRET": 60204463801097,
@@ -641,7 +682,8 @@
     },
     "MAIL": "interim.valenciennes@derichebourg.com",
     "RS": "FLAMME Florian",
-    "GPS": [50.3513529, 3.5225317]
+    "GPS": [50.3513529, 3.5225317],
+    "Ouest": false
   },
   {
     "SIRET": 60204463801352,
@@ -655,7 +697,8 @@
     },
     "MAIL": "interim.vitrolles@derichebourg.com",
     "RS": "",
-    "GPS": [43.46, 5.24861]
+    "GPS": [43.46, 5.24861],
+    "Ouest": true
   },
   {
     "SIRET": 60204463801287,
@@ -669,6 +712,7 @@
     },
     "MAIL": "interim.viviersdulac@derichebourg.com",
     "RS": "TREINS Ophélie",
-    "GPS": [45.645169, 5.9125222]
+    "GPS": [45.645169, 5.9125222],
+    "Ouest": false
   }
 ]

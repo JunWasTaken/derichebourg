@@ -10,6 +10,7 @@ import Annuaire from '../views/Annuaire'
 import Clients from '../components/Clients'
 import Agence from '../components/Annuaire/Agence'
 import Person from '../components/Annuaire/Person'
+import Organigrame from '../views/Organigrame'
 
 library.add(fas)
 
@@ -70,6 +71,11 @@ export default new Router({
           ]
         }
       ]
+    },
+    {
+      path: '/organigramme',
+      name: 'organigramme',
+      component: Organigrame
     }
   ]
 })

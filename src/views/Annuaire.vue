@@ -52,7 +52,7 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-            <l-popup :options="{'className':'custom-leaflet-popup'}">
+            <l-popup :options="{className:'custom-leaflet-popup'}">
               <table>
                 <tr>
                   <td>Num agence : </td>
@@ -198,7 +198,16 @@ a{
   color: white;
 }
 
+.custom-leaflet-popup{
+  font-family: GillSansSTD;
+}
+
 .custom-leaflet-popup > .leaflet-popup-content-wrapper{
   border: 2px solid #e3001a;
+  font-family: GillSansSTD;
+}
+
+.leaflet-popup-content-wrapper > .leaflet-popup-content{
+  font-family: GillSansSTD;
 }
 </style>

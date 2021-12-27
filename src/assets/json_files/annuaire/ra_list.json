@@ -1,0 +1,378 @@
+[
+ {
+   "Nom": "LEPILLIEZ  Victoria",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Albert",
+   "MAIL": "victoria.lepilliez@derichebourg.com",
+   "NUMERO": "0642965273",
+   "NumAgence": "047"
+ },
+ {
+   "Nom": "TREINS Ophélie",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Annecy",
+   "MAIL": "ophelie.treins@derichebourg.com",
+   "NUMERO": "0676965730",
+   "NumAgence": "021"
+ },
+ {
+   "Nom": "KANDULA Mélanie",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Arras",
+   "MAIL": "melanie.kandula@derichebourg.com",
+   "NUMERO": "0672055136",
+   "NumAgence": "141"
+ },
+ {
+   "Nom": "GRELLARD Leila",
+   "POSTE": "Adjointe Responsable Agence ",
+   "LIEU_TRAVAIL": "Asnières",
+   "MAIL": "leila.grellard@derichebourg.com",
+   "NUMERO": "0648224976",
+   "NumAgence": "098"
+ },
+ {
+   "Nom": "GOHIN Audrey",
+   "POSTE": "Adjointe Responsable Agence ",
+   "LIEU_TRAVAIL": "Bayonne",
+   "MAIL": "audrey.gohin@derichebourg.com",
+   "NUMERO": "?",
+   "NumAgence": "132"
+ },
+ {
+   "Nom": "LEJEUNE-SERVIEN Tiffany",
+   "POSTE": "Adjointe Responsable Agence ",
+   "LIEU_TRAVAIL": "Beauvais",
+   "MAIL": "tiffany.lejeuneservien@derichebourg.com",
+   "NUMERO": "0665462728 ",
+   "NumAgence": "086"
+ },
+ {
+   "Nom": "POIRAUDEAU Jacques",
+   "POSTE": "Responsable d'agence",
+   "LIEU_TRAVAIL": "Bordeaux",
+   "MAIL": "jacques.poireaudau@derichebourg.com",
+   "NUMERO": "?",
+   "NumAgence": "071"
+ },
+ {
+   "Nom": "PERILLAT Aurélie",
+   "POSTE": "Chargée d'affaires",
+   "LIEU_TRAVAIL": "Canejan",
+   "MAIL": "aurelie.perillat@derichebourg.com",
+   "NUMERO": "0645569557",
+   "NumAgence": "133"
+ },
+ {
+   "Nom": "AMORUSO Julie",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Cannes",
+   "MAIL": "julie.amoruso@derichebourg.com",
+   "NUMERO": "0601286689",
+   "NumAgence": "124"
+ },
+ {
+   "Nom": "GRENEU Caroline",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Caen",
+   "MAIL": "caroline.greneu@derichebourg.com",
+   "NUMERO": "0699212534",
+   "NumAgence": "144"
+ },
+ {
+   "Nom": "BATIFOL Sonia",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Clermont-Ferrand",
+   "MAIL": "sonia.batifol@derichebourg.com",
+   "NUMERO": "0762267107 ",
+   "NumAgence": "143"
+ },
+ {
+   "Nom": "GALIEGUE Fanny",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Compiègne",
+   "MAIL": "fanny.galiegue@derichebourg.com",
+   "NUMERO": "0642277209",
+   "NumAgence": "060"
+ },
+ {
+   "Nom": "DEVE Stéphanie",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Evreux",
+   "MAIL": "stephanie.deve@derichebourg.com",
+   "NUMERO": "0675628173",
+   "NumAgence": "054"
+ },
+ {
+   "Nom": "EL HDIDDIOUI Nawal",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Fontaine-les-Dijon",
+   "MAIL": "nawal.elhdiddioui@derichebourg.com",
+   "NUMERO": "0608069382 ",
+   "NumAgence": null
+ },
+ {
+   "Nom": "MARQUES Coraline",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "La Valette",
+   "MAIL": "coraline.marques@derichebourg.com",
+   "NUMERO": "0785637755 ",
+   "NumAgence": null
+ },
+ {
+   "Nom": "LEMOINE Romuald",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Le Mans",
+   "MAIL": "romuald.lemoine@derichebourg.com",
+   "NUMERO": "0659493224",
+   "NumAgence": "145"
+ },
+ {
+   "Nom": "RAISSI Latifa",
+   "POSTE": "Responsable Développement Logistique et \nTransport",
+   "LIEU_TRAVAIL": "Lieusaint",
+   "MAIL": "latifa.raissi@derichebourg.com",
+   "NUMERO": "0618503126 ",
+   "NumAgence": "140"
+ },
+ {
+   "Nom": "LIENARD Karine",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Liévin ",
+   "MAIL": "karine.lienard@derichebourg.com",
+   "NUMERO": "0674246812",
+   "NumAgence": "142"
+ },
+ {
+   "Nom": "GOEMINNE Hélène",
+   "POSTE": "Responsable d'agence",
+   "LIEU_TRAVAIL": "Lille",
+   "MAIL": "helene.goeminne@derichebourg.com",
+   "NUMERO": "?",
+   "NumAgence": "072"
+ },
+ {
+   "Nom": "ZOUBIR Hanane",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Lyon",
+   "MAIL": "hanane.zoubir@derichebourg.com",
+   "NUMERO": "0643184002",
+   "NumAgence": "081"
+ },
+ {
+   "Nom": "FABRE Christine",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Marseille (tertiaire et logistique)",
+   "MAIL": "christine.fabre@derichebourg.com",
+   "NUMERO": "0643184002",
+   "NumAgence": "028"
+ },
+ {
+   "Nom": "BELOT Chloé",
+   "POSTE": "Adjointe Responsable Agence ",
+   "LIEU_TRAVAIL": "Montargis",
+   "MAIL": "chloe.belot@derichebourg.com",
+   "NUMERO": "0238265326",
+   "NumAgence": "057"
+ },
+ {
+   "Nom": "MASLIES EMILIE",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Montauban",
+   "MAIL": "emilie.maslies@derichebourg.com",
+   "NUMERO": "0668290167",
+   "NumAgence": "130"
+ },
+ {
+   "Nom": "HEIRWEGH Anouchka",
+   "POSTE": "Responsable d'agence",
+   "LIEU_TRAVAIL": "Montigny le Bretonneux",
+   "MAIL": "anouchka.heirwegh@derichebourg.com",
+   "NUMERO": "?",
+   "NumAgence": "136"
+ },
+ {
+   "Nom": "MECHINEAU Sandra",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Montoir",
+   "MAIL": "sandra.mechineau@derichebourg.com",
+   "NUMERO": "0683939861",
+   "NumAgence": "015"
+ },
+ {
+   "Nom": "HOLYAK Pamela",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Montpellier",
+   "MAIL": "pamela.holyak@derichebourg.com",
+   "NUMERO": "0765159425",
+   "NumAgence": "146"
+ },
+ {
+   "Nom": "HANACHI Henda",
+   "POSTE": "Responsable Agence ",
+   "LIEU_TRAVAIL": "Nanterre / Banque",
+   "MAIL": "chloe.hanachi@derichebourg.com",
+   "NUMERO": "0141392061",
+   "NumAgence": "050"
+ },
+ {
+   "Nom": "LENAY Marianne",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Nantes",
+   "MAIL": "marianne.lenay@derichebourg.com",
+   "NUMERO": "0601053508 ",
+   "NumAgence": "125"
+ },
+ {
+   "Nom": "VITU Emmanuelle",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Nice",
+   "MAIL": "emmanuelle.vitu@derichebourg.com",
+   "NUMERO": "0629463549",
+   "NumAgence": "029"
+ },
+ {
+   "Nom": "CREUZET Nelly",
+   "POSTE": "Responsable de Secteur",
+   "LIEU_TRAVAIL": "Orléans",
+   "MAIL": "nelly.creuzet@derichebourg.com",
+   "NUMERO": "0750659585 ",
+   "NumAgence": "120"
+ },
+ {
+   "Nom": "GREFFIER Vanessa",
+   "POSTE": "Responsable d'Agence Junior",
+   "LIEU_TRAVAIL": "Reims",
+   "MAIL": "vanessa.greffier@derichebourg.com",
+   "NUMERO": "0785695589",
+   "NumAgence": "131"
+ },
+ {
+   "Nom": "BOSC Sophie",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Rennes",
+   "MAIL": "sophie.bosc@derichebourg.com",
+   "NUMERO": "0672883319 ",
+   "NumAgence": null
+ },
+ {
+   "Nom": "ALLARD  Isabelle",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Rochefort",
+   "MAIL": "isabelle.allard@derichebourg.com",
+   "NUMERO": "0632865475",
+   "NumAgence": "019"
+ },
+ {
+   "Nom": "BOUQUET   Céline",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Roissy",
+   "MAIL": "celine.bouquet@derichebourg.com",
+   "NUMERO": "0156460117",
+   "NumAgence": "036"
+ },
+ {
+   "Nom": "GAVELLE Nathalie",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Rouen",
+   "MAIL": "nathalie.gavelle@derichebourg.com",
+   "NUMERO": "0786153635 ",
+   "NumAgence": "085"
+ },
+ {
+   "Nom": "TREINS Ophélie",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Rumilly",
+   "MAIL": "ophelie.treins@derichebourg.com",
+   "NUMERO": "0676965730",
+   "NumAgence": "023"
+ },
+ {
+   "Nom": "FASSEUR Marine",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Rungis",
+   "MAIL": "marine.fasseur@derichebourg.com",
+   "NUMERO": "0671453392",
+   "NumAgence": "067"
+ },
+ {
+   "Nom": "VIGNEULLE Anaïs",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Strasbourg",
+   "MAIL": "anais.vigneulle@derichebourg.com",
+   "NUMERO": "0786172241 ",
+   "NumAgence": "129"
+ },
+ {
+   "Nom": "JACQUIN Estelle",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "St Quentin Fallavier",
+   "MAIL": "estelle.jacquin@derichebourg.com",
+   "NUMERO": "0630468968",
+   "NumAgence": "122"
+ },
+ {
+   "Nom": "MECHINEAU Sandra",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Saint Nazaire",
+   "MAIL": "sandra.mechineau@derichebourg.com",
+   "NUMERO": "0683939861",
+   "NumAgence": null
+ },
+ {
+   "Nom": "PENET Anne-Sophie",
+   "POSTE": "Responsable secteur",
+   "LIEU_TRAVAIL": "Tarbes",
+   "MAIL": "annesophie.penet@derichebourg.com",
+   "NUMERO": "0630254591",
+   "NumAgence": "017"
+ },
+ {
+   "Nom": "JACQUIN Estelle",
+   "POSTE": "Responsable d'Agence ",
+   "LIEU_TRAVAIL": "Thionville",
+   "MAIL": "estelle.jacquin@derichebourg.com",
+   "NUMERO": "0631898096",
+   "NumAgence": "127"
+ },
+ {
+   "Nom": "HUYNH Nadia",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Torcy",
+   "MAIL": "nadia.huynh@derichebourg.com",
+   "NUMERO": "0623054308",
+   "NumAgence": "062"
+ },
+ {
+   "Nom": "MAREUIL Stéphanie",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Toulouse",
+   "MAIL": "stephanie.mareuil@derichebourg.com",
+   "NUMERO": "0789385630  ",
+   "NumAgence": "074"
+ },
+ {
+   "Nom": "FLAMME Florian",
+   "POSTE": "Responsable de Secteur",
+   "LIEU_TRAVAIL": "Valenciennes",
+   "MAIL": "florian.flamme@derichebourg.com",
+   "NUMERO": "0647419337",
+   "NumAgence": "096"
+ },
+ {
+   "Nom": "JUMEL Karine",
+   "POSTE": "Responsable d'agence",
+   "LIEU_TRAVAIL": "Vitrolles",
+   "MAIL": "karine.jumel@derichebourg.com",
+   "NUMERO": "?",
+   "NumAgence": "013"
+ },
+ {
+   "Nom": "DESPLAT  Tiphaine",
+   "POSTE": "Responsable d'Agence",
+   "LIEU_TRAVAIL": "Viviers du Lac",
+   "MAIL": "tiphaine.desplat@derichebourg.com",
+   "NUMERO": "0616204140 ",
+   "NumAgence": "032"
+ }
+]

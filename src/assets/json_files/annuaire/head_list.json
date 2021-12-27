@@ -1,0 +1,82 @@
+[
+ {
+   "nom": "DIRSON",
+   "prenom": "Céline",
+   "role": "Directrice Générale",
+   "mail": "celine.dirson@derichebourg.com",
+   "tel bureau": "+33 1 4285 1775",
+   "tel mobile": null
+ },
+ {
+   "nom": "MORGADO",
+   "prenom": "Elodie",
+   "role": "Responsable Qualité",
+   "mail": "elodie.morgado@derichebourg.com",
+   "tel bureau": "+33561313067",
+   "tel mobile": 33610120981
+ },
+ {
+   "nom": "AUCANT",
+   "prenom": "Leslie",
+   "role": "Responsable Administratif et Comptable",
+   "mail": "leslie.aucant@derichebourg.com",
+   "tel bureau": "+33145170485",
+   "tel mobile": 33625607149
+ },
+ {
+   "nom": "TOUABI",
+   "prenom": "Sonia",
+   "role": "Direction Commerciale",
+   "mail": "sonia.touabi@derichebourg.com",
+   "tel bureau": "33141392069",
+   "tel mobile": null
+ },
+ {
+   "nom": "PASCOE",
+   "prenom": "Shona",
+   "role": "Responsable RH",
+   "mail": "shona.pascoe@derichebourg.com",
+   "tel bureau": "33145170486",
+   "tel mobile": null
+ },
+ {
+   "nom": "LOUMAGNE ",
+   "prenom": "Virginie",
+   "role": "Processus Sourcing",
+   "mail": "virginie.loumagne@derichebourg.com",
+   "tel bureau": "33561313062",
+   "tel mobile": null
+ },
+ {
+   "nom": "BECHEPOIS",
+   "prenom": "Julien",
+   "role": "Transition Digitale",
+   "mail": "julien.bechepois@derichebourg.com",
+   "tel bureau": "",
+   "tel mobile": null
+ },
+ {
+   "nom": "LACASSE",
+   "prenom": "Christophe",
+   "role": "Directeur régional IDF",
+   "mail": "christophe.lacasse@derichebourg.com",
+   "tel bureau": "",
+   "tel mobile": null
+ },
+ {
+   "nom": "CAMUS",
+   "prenom": "Valérie",
+   "role": "Direction Operationnelle Est",
+   "mail": "valerie.camus@derichebourg.com",
+   "tel bureau": "33238265221",
+   "tel mobile": null
+ },
+ {
+   "nom": "VILLEMAGNE",
+   "prenom": "Jean-François",
+   "role": "Direction Operationnelle Ouest",
+   "mail": "jeanfrancois.villemagne@derichebourg.com",
+   "tel bureau": "33561313068",
+   "tel mobile": null
+ }
+]

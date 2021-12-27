@@ -28,12 +28,14 @@
         <div id="infoChef" class="text-align-left">
           <p>
             <span class="display-inline text-bulk text-big">Identité :</span>
+            {{ this.get_ra[0].Nom }}
           </p>
           <p>
             <span class="display-inline text-bulk text-big">Téléphone : </span>
+            {{ this.get_ra[0].NUMERO}}
           </p>
           <p>
-            <span class="display-inline text-bulk text-big">Mail : </span>
+            <span class="display-inline text-bulk text-big">Mail : </span><a :href='`mailto:${this.get_ra[0].MAIL}`'> {{this.get_ra[0].MAIL}} </a>
           </p>
         </div>
       </div>
@@ -68,6 +70,12 @@ export default {
       let list = this.list_employees.filter(employee => employee.PS1AGE === this.$route.params.id_agence)
       console.log(list)
       return list
+    },
+    get_ra () {
+      let listRa = require('../../assets/json_files/annuaire/ra_list.json')
+      let ra = listRa.filter(ra => ra.NumAgence === this.$route.params.id_agence)
+      console.log(ra)
+      return ra
     }
   },
   methods: {
