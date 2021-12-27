@@ -1,20 +1,16 @@
 <template>
   <div>
-    <div id="header">
-      <Header/>
-    </div>
+    <Header/>
     <div id="content" class="flex">
       <div id="searchMenu" class="flex-1 height-100%">
-        <div id="searchbar" class="margin-bottom-10px flex margin-x-5px">
-          <input type="text" id="search" v-model="searchbar"
-                 placeholder="rechercher une agence"
-                 class="width-100percent padding-bottom-10px padding-top-10px padding-left-5px padding-right-5px  border-1px border-radius-10px border-red">
+        <div id="searchbar" class="margin-bottom-10px searchbar-container">
+          <input type="text" id="search" v-model="searchbar" placeholder="rechercher une agence" class="searchbar border-1px border-red border-radius-5px margin-right-5px margin-left-5px">
         </div>
         <div class="height-650px overflow-auto">
           <div v-for="agency in searchAgence"
                :key="agency.N_ANAEL"
-               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-2px border-red agency"
-               @click="clickSearchResult(agency)">
+               class="text-align-left padding-top-5px padding-bottom-5px border-bottom-1px border-red agency"
+               @click="centerUpdate(agency.GPS)">
             <div class="margin-left-10px">
               Agence n° {{ agency.N_ANAEL }}
               <div class="flex">
@@ -32,13 +28,14 @@
           </div>
         </div>
       </div>
-      <div id="map_derichebourg" class="flex-3">
+      <div id="map_derichebourg" class="flex-3" style="height: 12px">
         <l-map
           v-if="showMap"
           :zoom="zoom"
           :center="center"
           @update:center="centerUpdate"
           @update:zoom="zoomUpdate"
+          style="height: 70vh;"
           class="z-index_1"
         >
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
@@ -55,9 +52,7 @@
               :icon-size="dynamicSize"
               :icon-anchor="dynamicAnchor"
             ></l-icon>
-            <l-popup class="padding-left-5px"
-                     :options="{className:'custom-leaflet-popup'}"
-            >
+            <l-popup :options="{'className':'custom-leaflet-popup'}">
               <table>
                 <tr>
                   <td>Num agence : </td>
@@ -119,6 +114,7 @@ import { latLng } from 'leaflet'
 import {OpenStreetMapProvider} from 'leaflet-geosearch'
 import 'leaflet/dist/leaflet.css'
 import '../assets/stylesheet/main.css'
+import '../assets/stylesheet/fonts.css'
 
 const provider = new OpenStreetMapProvider()
 
@@ -180,19 +176,6 @@ export default {
         this.gpsCoordinates.push(element.y)
       })
       console.log(this.gpsCoordinates)
-    },
-    clickSearchResult (agency) {
-      this.center = agency.GPS
-      this.$router.push({name: 'agence',
-        params: {
-          id_agence: agency.N_ANAEL,
-          nom_agence: `${agency.VILLE} Interim`,
-          addresse_agence: `${agency.ADRESSE} ${agency.CP} ${agency.VILLE}`,
-          tel_agence: agency.TEL,
-          mail_agence: agency.MAIL,
-          gps_agence: agency.GPS
-        }
-      })
     }
   }
 }
@@ -202,9 +185,11 @@ export default {
 a{
   color: #e3001a;
 }
+
 .height-650px{
   height: 628px;
 }
+
 .agency{
   transition-duration: 0.35s;
 }
@@ -212,30 +197,8 @@ a{
   background-color: rgba(241, 113, 128, 0.9);
   color: white;
 }
-.custom-leaflet-popup{
-  font-family: GillSansSTD;
-  border-left: solid #e3001a 3px;
-  border-radius: 10px;
-}
-.custom-leaflet-popup  .leaflet-popup-content-wrapper {
-  font-family: GillSansSTD;
-  border-left: solid #e3001a 3px;
-  border-radius: 10px;
-}
-.custom-leaflet-popup .leaflet-popup-content-wrapper a {
-  color: #e3001a;
-}
-.custom-leaflet-popup .leaflet-popup-tip-container {
-  width: 50px;
-  height: 15px;
-}
-.custom-leaflet-popup .leaflet-popup-tip {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
 
-.custom-leaflet-popup div{
-  font-family: GillSansSTD;
+.custom-leaflet-popup > .leaflet-popup-content-wrapper{
+  border: 2px solid #e3001a;
 }
 </style>

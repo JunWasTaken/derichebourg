@@ -38,16 +38,14 @@
         </div>
       </div>
       <div id="employee">
-        <h2>Liste des chargé.e.s de recrutement</h2>
-        <div id="list_employees" class="overflow-auto">
-          <div v-for="(employee) in get_employees"
-               :key="`${employee.PS1NOM}_${employee.PS1PRE}`"
-               :id="`${employee.PS1NOM}_${employee.PS1PRE}`"
-               class="text-align-left padding-top-5px padding-bottom-5px width-100percent"
-               :class="{ greyBG : odd_numbers(get_employees.findIndex(employee_list => employee_list.PS1NOM=== employee.PS1NOM))}"
-          >
-            <span class="padding-left-5px text-bulk " >{{employee.PS1NOM}} {{employee.PS1PRE}}  </span>
-          </div>
+        <h2>Liste des assistant.e.s d'agence</h2>
+        <div v-for="(employee, index) in get_employees"
+             :key="`${employee.PS1NOM}_${employee.PS1PRE}`"
+             :id="`${employee.PS1NOM}_${employee.PS1PRE}`"
+             class="text-align-left padding-top-5px padding-bottom-5px padding-left-5px"
+             :class="{ light_grey_bg : oddNumbers(index) }"
+        >
+          <span class="text-bulk">{{employee.PS1NOM}} {{employee.PS1PRE}}</span>
         </div>
       </div>
     </div>
@@ -73,17 +71,14 @@ export default {
     }
   },
   methods: {
-    odd_numbers (x) {
-      return (x % 2 === 0)
+    oddNumbers (index) {
+      return index % 2 === 0
     }
   }
 }
 </script>
 
 <style scoped>
-a{
-  color: #e3001a;
-}
 .background{
   height: 100%;
   width: 100%;
@@ -105,10 +100,6 @@ a{
   position: absolute;
   top: 5px;
   right: 5px;
-  color: #e3001a;
-}
-
-.greyBG{
-  background-color: #ececec;
+  color: #e3001a;Zound-color: #b9b9b9;
 }
 </style>
